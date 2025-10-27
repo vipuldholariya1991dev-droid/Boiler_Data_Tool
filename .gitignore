@@ -17,10 +17,11 @@ build/
 downloaded_data/
 boiler_image_urls/
 boiler_specific_downloads/
-boiler_keywords/
 scraped_data/
 processed_data/
 reports/
+# But allow boiler_keywords in boiler_images (they are input files)
+!/boiler_images/boiler_keywords/
 
 # Exclude video/image data
 *.mp4
@@ -48,6 +49,7 @@ reports/
 !/youtube/keywords.txt
 !/youtube/keywords2.txt
 !/youtube/keywords3.txt
+!/boiler_images/boiler_keywords/*.txt
 
 # Exclude boiler-specific directories in youtube folder
 *_boiler/

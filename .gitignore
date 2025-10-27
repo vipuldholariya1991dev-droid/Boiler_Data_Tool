@@ -40,9 +40,14 @@ reports/
 # Exclude data files (csv, json, txt, xlsx)
 *.csv
 *.json
-*.txt
 *.xlsx
 *.log
+
+# Exclude txt files EXCEPT important input files
+*.txt
+!/youtube/keywords.txt
+!/youtube/keywords2.txt
+!/youtube/keywords3.txt
 
 # Exclude boiler-specific directories in youtube folder
 *_boiler/
